@@ -1,0 +1,9 @@
+# Build output
+out/
+*.class
+
+# OS / editor
+.DS_Store
+.idea/
+*.iml
+.vscode/
