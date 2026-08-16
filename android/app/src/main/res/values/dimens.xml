@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Small dimension constants used by the programmatic UI. -->
+    <dimen name="screen_padding">12dp</dimen>
+    <dimen name="control_height">48dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="body_size">14sp</dimen>
+    <dimen name="caption_size">12sp</dimen>
+</resources>
