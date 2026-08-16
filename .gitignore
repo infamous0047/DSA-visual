@@ -7,3 +7,12 @@ out/
 .idea/
 *.iml
 .vscode/
+
+# Android (gradle/build output; wrapper jar is committed-able but fetched on demand)
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+android/captures/
+android/*.iml
+android/.idea/

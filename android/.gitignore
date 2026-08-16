@@ -1,0 +1,11 @@
+# Android Studio / Gradle
+.gradle/
+build/
+local.properties
+*.iml
+.idea/
+captures/
+
+# Keep the wrapper jar so the project builds without a local Gradle install,
+# but ignore everything else Gradle generates locally.
+!gradle/wrapper/gradle-wrapper.jar

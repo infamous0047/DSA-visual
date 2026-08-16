@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      A dark theme tuned for a diagram-style visualizer. Built on the framework
+      Material theme so no AppCompat / Material Components library is required,
+      keeping the APK small and cold-start fast on low-end devices.
+    -->
+    <style name="AppTheme" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg_window</item>
+        <item name="android:colorForeground">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:statusBarColor">@color/bg_window</item>
+        <item name="android:navigationBarColor">@color/bg_window</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

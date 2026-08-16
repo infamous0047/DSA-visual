@@ -1,0 +1,39 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'dsa.visual.android'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId 'dsa.visual.android'
+        // minSdk 23 = Android 6.0 (Marshmallow). Covers the Redmi 8A Dual
+        // (Android 9+, API 28) and a wide range of ordinary low-end phones.
+        minSdk 23
+        targetSdk 35
+        versionCode 1
+        versionName '0.1.0'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    buildTypes {
+        release {
+            // The app is fully offline and has no secrets; minifying is kept off
+            // for milestone 1 to keep the build simple and the source easy to
+            // learn from. It can be enabled later without code changes.
+            minifyEnabled false
+        }
+    }
+}
+
+// No external dependencies: the visualizer is built entirely on the Android
+// framework (android.view.View, android.graphics.Canvas). This keeps the APK
+// tiny and the cold-start fast on low-end hardware. Add nothing here unless a
+// future milestone truly needs it.
+dependencies {
+}
